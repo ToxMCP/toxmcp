@@ -41,3 +41,9 @@ Parts of this suite were developed in the context of the **VHP4Safety** project.
 ## License
 
 Apache-2.0
+
+## Cite
+
+If you use ToxMCP in your work, please cite the preprint: https://doi.org/10.64898/2026.02.06.703989
+
+Citation metadata: [CITATION.cff](./CITATION.cff)
