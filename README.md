@@ -38,6 +38,8 @@ See the official MCP docs/spec: https://modelcontextprotocol.io/
 
 ToxMCP was developed in the context of the **VHP4Safety** project (see: https://github.com/VHP4Safety) and related research/engineering efforts.
 
+Funding: Dutch Research Council (NWO) — NWA.1292.19.272 (NWA programme) | ROR: https://ror.org/04jsz6e67
+
 This suite integrates with third-party data sources and services (e.g., EPA CompTox, ADMETlab, AOP resources, OECD QSAR Toolbox, Open Systems Pharmacology). Those upstream resources are owned and governed by their respective providers; users are responsible for meeting any access, API key, rate limit, and license/EULA requirements described in each module.
 
 ## License
