@@ -1,3 +1,8 @@
+[![Release](https://img.shields.io/github/v/release/ToxMCP/toxmcp?sort=semver)](https://github.com/ToxMCP/toxmcp/releases)
+[![DOI](https://img.shields.io/badge/DOI-10.64898%2F2026.02.06.703989-blue)](https://doi.org/10.64898/2026.02.06.703989)
+[![License](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](./LICENSE)
+[![MCP](https://img.shields.io/badge/MCP-JSON--RPC-informational)](https://modelcontextprotocol.io/)
+
 # ToxMCP Suite
 
 **ToxMCP** is a suite of **guardrailed, auditable agentic workflows** for computational toxicology delivered through the **Model Context Protocol (MCP)**.
@@ -62,4 +67,3 @@ Djidrovski, I. **ToxMCP: Guardrailed, Auditable Agentic Workflows for Computatio
 ```
 
 Citation metadata: [`CITATION.cff`](./CITATION.cff)
-
