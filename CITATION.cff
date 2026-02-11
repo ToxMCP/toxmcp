@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use ToxMCP in your work, please cite this preprint."
+title: "ToxMCP: Guardrailed, Auditable Agentic Workflows for Computational Toxicology via the Model Context Protocol"
+type: article
+authors:
+  - family-names: "Djidrovski"
+    given-names: "Ivo"
+    orcid: "https://orcid.org/0000-0002-7637-8515"
+doi: "10.64898/2026.02.06.703989"
+url: "https://doi.org/10.64898/2026.02.06.703989"
+repository-code: "https://github.com/ToxMCP/toxmcp"
+license: "Apache-2.0"
