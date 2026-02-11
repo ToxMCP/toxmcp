@@ -36,7 +36,9 @@ See the official MCP docs/spec: https://modelcontextprotocol.io/
 
 ## Acknowledgements / Origins
 
-Parts of this suite were developed in the context of the **VHP4Safety** project. Where applicable, repositories and documentation link back to upstream project resources and third-party services.
+ToxMCP was developed in the context of the **VHP4Safety** project and related research/engineering efforts.
+
+This suite integrates with third-party data sources and services (e.g., EPA CompTox, ADMETlab, AOP resources, OECD QSAR Toolbox, Open Systems Pharmacology). Those upstream resources are owned and governed by their respective providers; users are responsible for meeting any access, API key, rate limit, and license/EULA requirements described in each module.
 
 ## License
 
