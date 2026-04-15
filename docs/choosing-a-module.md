@@ -34,13 +34,10 @@ A quick guide for first-time users.
 - **PBPK MCP** — requires local engine setup (see repo docs; Docker Compose path available).
   - https://github.com/ToxMCP/pbpk-mcp
 
-## If you want exposure-side workflows now
-
-- **Direct-Use Exposure MCP** — available now as the first exposure-side module in the stack.
-  - https://github.com/ToxMCP/direct-use-exposure-mcp
-
 ## Coming soon in the stack
 
+- **Direct-Use Exposure MCP** — coming soon.
+  - https://github.com/ToxMCP/direct-use-exposure-mcp
 - **Dietary Exposure MCP** — coming soon.
   - https://github.com/ToxMCP/dietary-exposure-mcp
 - **Environmental Fate MCP** — coming soon.

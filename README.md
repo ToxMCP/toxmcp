@@ -42,7 +42,7 @@ See the official MCP docs/spec: https://modelcontextprotocol.io/
 | **AOP MCP** | Mechanistic pathways + authoring workflows | AOP-Wiki / AOP-DB / federation | Internet access recommended | Available now | [Repo](https://github.com/ToxMCP/aop-mcp) |
 | **O-QT MCP** | OECD QSAR Toolbox workflows + reports | OECD QSAR Toolbox WebAPI | Requires QSAR Toolbox WebAPI access | Available now | [Repo](https://github.com/ToxMCP/oqt-mcp) |
 | **PBPK MCP** | PBPK simulation control + PK analytics | Open Systems Pharmacology Suite | Local engine setup (see repo) | Available now | [Repo](https://github.com/ToxMCP/pbpk-mcp) |
-| **Direct-Use Exposure MCP** | Direct-use and near-field external exposure workflows | Suite-native exposure runtime | See repo | Available now | [Repo](https://github.com/ToxMCP/direct-use-exposure-mcp) |
+| **Direct-Use Exposure MCP** | Coming soon | Coming soon | Coming soon | Coming soon | [Repo](https://github.com/ToxMCP/direct-use-exposure-mcp) |
 | **Dietary Exposure MCP** | Coming soon | Coming soon | Coming soon | Coming soon | [Repo](https://github.com/ToxMCP/dietary-exposure-mcp) |
 | **Environmental Fate MCP** | Coming soon | Coming soon | Coming soon | Coming soon | [Repo](https://github.com/ToxMCP/environmental-fate-mcp) |
 | **Bioactivity-PoD MCP** | Coming soon | Coming soon | Coming soon | Coming soon | [Repo](https://github.com/ToxMCP/bioactivity-pod-mcp) |
@@ -56,7 +56,7 @@ See the official MCP docs/spec: https://modelcontextprotocol.io/
 
 Exposure-side stack expansion is in progress. The new module repos are linked above early so
 you can follow them, while setup details for the `Coming soon` entries will land in those
-repos directly.
+repos directly as each module is published.
 
 ## Docs
 
