@@ -37,11 +37,11 @@ See the official MCP docs/spec: https://modelcontextprotocol.io/
 
 | Module | What it covers | Upstream dependency | Requirements | Status | Repo |
 | --- | --- | --- | --- | --- | --- |
-| **CompTox MCP** | Identity, hazard, exposure | EPA CompTox API | **API key required** (`CTX_API_KEY`) | Available now | [Repo](https://github.com/ToxMCP/comptox-mcp) |
-| **ADMETlab MCP** | Rapid ADMET prediction + utilities | ADMETlab 3.0 API | No key by default (upstream may rate-limit) | Available now | [Repo](https://github.com/ToxMCP/admetlab-mcp) |
-| **AOP MCP** | Mechanistic pathways + authoring workflows | AOP-Wiki / AOP-DB / federation | Internet access recommended | Available now | [Repo](https://github.com/ToxMCP/aop-mcp) |
-| **O-QT MCP** | OECD QSAR Toolbox workflows + reports | OECD QSAR Toolbox WebAPI | Requires QSAR Toolbox WebAPI access | Available now | [Repo](https://github.com/ToxMCP/oqt-mcp) |
-| **PBPK MCP** | PBPK simulation control + PK analytics | Open Systems Pharmacology Suite | Local engine setup (see repo) | Available now | [Repo](https://github.com/ToxMCP/pbpk-mcp) |
+| **CompTox MCP** | Identity, hazard, exposure, bioactivity, screening prioritization | EPA CompTox APIs + packaged metadata bundles | **API key required** (`CTX_API_KEY`) | Available now | [Repo](https://github.com/ToxMCP/comptox-mcp) |
+| **ADMETlab MCP** | Molecule washing, SVG rendering, ADMET prediction, CSV retrieval | ADMETlab 3.0 API | No key by default; upstream instability/rate limits may cause intermittent failures | Available now | [Repo](https://github.com/ToxMCP/admetlab-mcp) |
+| **AOP MCP** | Mechanistic pathways, scientific review, assay discovery, authoring workflows | AOP-Wiki / AOP-DB / CompTox federation | Internet access recommended; fixture fallback available for offline development | Available now | [Repo](https://github.com/ToxMCP/aop-mcp) |
+| **O-QT MCP** | OECD QSAR workflows, grouping/read-across dossiers, PDF reports | OECD QSAR Toolbox WebAPI | Requires a running QSAR Toolbox WebAPI instance (typically Windows-hosted) | Available now | [Repo](https://github.com/ToxMCP/oqt-mcp) |
+| **PBPK MCP** | PBPK simulation, qualification, verification, dossier export | Open Systems Pharmacology Suite + `rxode2` runtime | Local worker/runtime setup required (see repo deploy scripts) | Available now | [Repo](https://github.com/ToxMCP/pbpk-mcp) |
 | **Direct-Use Exposure MCP** | Coming soon | Coming soon | Coming soon | Coming soon | [Repo](https://github.com/ToxMCP/direct-use-exposure-mcp) |
 | **Dietary Exposure MCP** | Coming soon | Coming soon | Coming soon | Coming soon | [Repo](https://github.com/ToxMCP/dietary-exposure-mcp) |
 | **Environmental Fate MCP** | Coming soon | Coming soon | Coming soon | Coming soon | [Repo](https://github.com/ToxMCP/environmental-fate-mcp) |
