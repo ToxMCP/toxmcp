@@ -16,7 +16,7 @@
 
 ## Getting started
 
-1) Pick a module below (CompTox is the showcase; ADMETlab is the lowest-friction).
+1) Pick a module below (CompTox is the recommended first run today).
 2) Follow that repo’s **Quickstart TL;DR**.
 3) Verify with the **Verification (smoke test)** curl snippet.
 
@@ -35,18 +35,28 @@ See the official MCP docs/spec: https://modelcontextprotocol.io/
 
 ## Modules
 
-| Module | What it covers | Upstream dependency | Requirements | Repo |
-| --- | --- | --- | --- | --- |
-| **CompTox MCP** | Identity, hazard, exposure | EPA CompTox API | **API key required** (`CTX_API_KEY`) | https://github.com/ToxMCP/comptox-mcp |
-| **ADMETlab MCP** | Rapid ADMET prediction + utilities | ADMETlab 3.0 API | No key by default (upstream may rate-limit) | https://github.com/ToxMCP/admetlab-mcp |
-| **AOP MCP** | Mechanistic pathways + authoring workflows | AOP-Wiki / AOP-DB / federation | Internet access recommended | https://github.com/ToxMCP/aop-mcp |
-| **O-QT MCP** | OECD QSAR Toolbox workflows + reports | OECD QSAR Toolbox WebAPI | Requires QSAR Toolbox WebAPI access | https://github.com/ToxMCP/oqt-mcp |
-| **PBPK MCP** | PBPK simulation control + PK analytics | Open Systems Pharmacology Suite | Local engine setup (see repo) | https://github.com/ToxMCP/pbpk-mcp |
+| Module | What it covers | Upstream dependency | Requirements | Status | Repo |
+| --- | --- | --- | --- | --- | --- |
+| **CompTox MCP** | Identity, hazard, exposure | EPA CompTox API | **API key required** (`CTX_API_KEY`) | Available now | [Repo](https://github.com/ToxMCP/comptox-mcp) |
+| **ADMETlab MCP** | Rapid ADMET prediction + utilities | ADMETlab 3.0 API | No key by default (upstream may rate-limit) | Available now | [Repo](https://github.com/ToxMCP/admetlab-mcp) |
+| **AOP MCP** | Mechanistic pathways + authoring workflows | AOP-Wiki / AOP-DB / federation | Internet access recommended | Available now | [Repo](https://github.com/ToxMCP/aop-mcp) |
+| **O-QT MCP** | OECD QSAR Toolbox workflows + reports | OECD QSAR Toolbox WebAPI | Requires QSAR Toolbox WebAPI access | Available now | [Repo](https://github.com/ToxMCP/oqt-mcp) |
+| **PBPK MCP** | PBPK simulation control + PK analytics | Open Systems Pharmacology Suite | Local engine setup (see repo) | Available now | [Repo](https://github.com/ToxMCP/pbpk-mcp) |
+| **Direct-Use Exposure MCP** | Direct-use and near-field external exposure workflows | Suite-native exposure runtime | See repo | Available now | [Repo](https://github.com/ToxMCP/direct-use-exposure-mcp) |
+| **Dietary Exposure MCP** | Coming soon | Coming soon | Coming soon | Coming soon | [Repo](https://github.com/ToxMCP/dietary-exposure-mcp) |
+| **Environmental Fate MCP** | Coming soon | Coming soon | Coming soon | Coming soon | [Repo](https://github.com/ToxMCP/environmental-fate-mcp) |
+| **Bioactivity-PoD MCP** | Coming soon | Coming soon | Coming soon | Coming soon | [Repo](https://github.com/ToxMCP/bioactivity-pod-mcp) |
 
 ### Which one should I try first?
 
-- If you want the **lowest-friction first run**, start with **ADMETlab MCP**.
-- If you want the most **on-brand toxicology dataset integration**, start with **CompTox MCP** (you’ll need an API key).
+- Start with **CompTox MCP** if you want the best first-run experience and the most
+  recognizable toxicology dataset integration today.
+- Then add **AOP MCP**, **O-QT MCP**, or **PBPK MCP** depending on whether you want
+  mechanistic context, QSAR Toolbox automation, or PK workflows next.
+
+Exposure-side stack expansion is in progress. The new module repos are linked above early so
+you can follow them, while setup details for the `Coming soon` entries will land in those
+repos directly.
 
 ## Docs
 
