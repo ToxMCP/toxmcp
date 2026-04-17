@@ -39,10 +39,15 @@ A quick guide for first-time users.
   verification, and dossier export.
   - https://github.com/ToxMCP/pbpk-mcp
 
+## If you want auditable exposure-scenario construction
+
+- **Direct-Use Exposure MCP** — the public suite module for deterministic external-dose
+  screening, jurisdictional comparison, and PBPK-ready handoff packaging with explicit
+  assumptions, provenance, limitations, and fit-for-purpose guidance.
+  - https://github.com/ToxMCP/direct-use-exposure-mcp
+
 ## Coming soon in the stack
 
-- **Direct-Use Exposure MCP** — coming soon.
-  - https://github.com/ToxMCP/direct-use-exposure-mcp
 - **Dietary Exposure MCP** — coming soon.
   - https://github.com/ToxMCP/dietary-exposure-mcp
 - **Environmental Fate MCP** — coming soon.

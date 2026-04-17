@@ -16,7 +16,9 @@
 
 ## Getting started
 
-1) Pick a module below (CompTox is the recommended first run today).
+1) Pick a module below.
+   CompTox is still the best first run for many users today, and Direct-Use Exposure MCP is
+   now the public entry point for auditable exposure-scenario construction.
 2) Follow that repo’s **Quickstart TL;DR**.
 3) Verify with the **Verification (smoke test)** curl snippet.
 
@@ -42,7 +44,7 @@ See the official MCP docs/spec: https://modelcontextprotocol.io/
 | **AOP MCP** | Mechanistic pathways, scientific review, assay discovery, authoring workflows | AOP-Wiki / AOP-DB / CompTox federation | Internet access recommended; fixture fallback available for offline development | Available now | [Repo](https://github.com/ToxMCP/aop-mcp) |
 | **O-QT MCP** | OECD QSAR workflows, grouping/read-across dossiers, PDF reports | OECD QSAR Toolbox WebAPI | Requires a running QSAR Toolbox WebAPI instance (typically Windows-hosted) | Available now | [Repo](https://github.com/ToxMCP/oqt-mcp) |
 | **PBPK MCP** | PBPK simulation, qualification, verification, dossier export | Open Systems Pharmacology Suite + `rxode2` runtime | Local worker/runtime setup required (see repo deploy scripts) | Available now | [Repo](https://github.com/ToxMCP/pbpk-mcp) |
-| **Direct-Use Exposure MCP** | Coming soon | Coming soon | Coming soon | Coming soon | [Repo](https://github.com/ToxMCP/direct-use-exposure-mcp) |
+| **Direct-Use Exposure MCP** | Auditable deterministic external-dose scenario construction, jurisdictional comparison, PBPK-ready handoff packaging | Versioned defaults, packaged archetypes, bounded worker/exchange surfaces | Python 3.12+; local install from repo release assets | Available now | [Repo](https://github.com/ToxMCP/direct-use-exposure-mcp) |
 | **Dietary Exposure MCP** | Coming soon | Coming soon | Coming soon | Coming soon | [Repo](https://github.com/ToxMCP/dietary-exposure-mcp) |
 | **Environmental Fate MCP** | Coming soon | Coming soon | Coming soon | Coming soon | [Repo](https://github.com/ToxMCP/environmental-fate-mcp) |
 | **Bioactivity-PoD MCP** | Coming soon | Coming soon | Coming soon | Coming soon | [Repo](https://github.com/ToxMCP/bioactivity-pod-mcp) |
@@ -51,12 +53,15 @@ See the official MCP docs/spec: https://modelcontextprotocol.io/
 
 - Start with **CompTox MCP** if you want the best first-run experience and the most
   recognizable toxicology dataset integration today.
+- Use **Direct-Use Exposure MCP** when you need a reviewable exposure object with explicit
+  assumptions, provenance, limitations, and fit-for-purpose framing before PBPK or final
+  assessment work.
 - Then add **AOP MCP**, **O-QT MCP**, or **PBPK MCP** depending on whether you want
   mechanistic context, QSAR Toolbox automation, or PK workflows next.
 
-Exposure-side stack expansion is in progress. The new module repos are linked above early so
-you can follow them, while setup details for the `Coming soon` entries will land in those
-repos directly as each module is published.
+Exposure-side stack expansion is still in progress, but the external-exposure layer is now
+public. `Direct-Use Exposure MCP` is the current suite module for deterministic exposure
+screening and governed external-dose handoff generation.
 
 ## Docs
 
