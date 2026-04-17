@@ -74,7 +74,7 @@ Start here: [docs/README.md](./docs/README.md)
 
 ## Acknowledgements / Origins
 
-ToxMCP was developed in the context of the **VHP4Safety** project (see: https://github.com/VHP4Safety) and related research/engineering efforts.
+ToxMCP was developed, in part, in the context of the **VHP4Safety** project (see: https://github.com/VHP4Safety) and related research and engineering efforts.
 
 Funding: Dutch Research Council (NWO) — NWA.1292.19.272 (NWA programme)
 
