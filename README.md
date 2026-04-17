@@ -1,20 +1,48 @@
 [![Release](https://img.shields.io/github/v/release/ToxMCP/toxmcp?sort=semver)](https://github.com/ToxMCP/toxmcp/releases)
+[![GitHub stars](https://img.shields.io/github/stars/ToxMCP/toxmcp?style=social)](https://github.com/ToxMCP/toxmcp/stargazers)
 [![DOI](https://img.shields.io/badge/DOI-10.64898%2F2026.02.06.703989-blue)](https://doi.org/10.64898/2026.02.06.703989)
 [![License](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](./LICENSE)
 [![MCP](https://img.shields.io/badge/MCP-JSON--RPC-informational)](https://modelcontextprotocol.io/)
 
 # ToxMCP Suite
 
-**ToxMCP** is a suite of **guardrailed, auditable agentic workflows** for computational toxicology delivered through the **Model Context Protocol (MCP)**.
+**ToxMCP** is the **public suite hub** for **guardrailed, auditable MCP servers** across computational toxicology, exposure science, mechanistic reasoning, QSAR workflows, ADMET utilities, and downstream kinetic modeling.
+
+If you want the single best place to follow the public suite, module launches, and onboarding path, **star this repo**.
 
 - Preprint (bioRxiv): https://doi.org/10.64898/2026.02.06.703989
 - Citation metadata: [`CITATION.cff`](./CITATION.cff)
+
+## Why Star This Repo?
+
+- It is the **canonical public index** for the ToxMCP suite.
+- It is the best place to track **which modules are public now** versus still in progress.
+- It is the suite-level home for **docs, architecture, quickstart guidance, and contribution links**.
 
 ## Architecture
 
 ![ToxMCP architecture](./assets/toxmcp-architecture.jpg)
 
-## Getting started
+## What Is MCP?
+
+MCP (Model Context Protocol) is a standard way for LLM clients and orchestrators to call external tools over a structured interface.
+See the official MCP docs/spec: https://modelcontextprotocol.io/
+
+## Public Suite Today
+
+| Module | What it covers | Upstream dependency | Requirements | Status | Repo |
+| --- | --- | --- | --- | --- | --- |
+| **CompTox MCP** | Identity, hazard, exposure, bioactivity, screening prioritization | EPA CompTox APIs + packaged metadata bundles | **API key required** (`CTX_API_KEY`) | Available now | [Repo](https://github.com/ToxMCP/comptox-mcp) |
+| **ADMETlab MCP** | Molecule washing, SVG rendering, ADMET prediction, CSV retrieval | ADMETlab 3.0 API | No key by default; upstream instability/rate limits may cause intermittent failures | Available now | [Repo](https://github.com/ToxMCP/admetlab-mcp) |
+| **AOP MCP** | Mechanistic pathways, scientific review, assay discovery, authoring workflows | AOP-Wiki / AOP-DB / CompTox federation | Internet access recommended; fixture fallback available for offline development | Available now | [Repo](https://github.com/ToxMCP/aop-mcp) |
+| **O-QT MCP** | OECD QSAR workflows, grouping/read-across dossiers, PDF reports | OECD QSAR Toolbox WebAPI | Requires a running QSAR Toolbox WebAPI instance (typically Windows-hosted) | Available now | [Repo](https://github.com/ToxMCP/oqt-mcp) |
+| **PBPK MCP** | PBPK simulation, qualification, verification, dossier export | Open Systems Pharmacology Suite + `rxode2` runtime | Local worker/runtime setup required (see repo deploy scripts) | Available now | [Repo](https://github.com/ToxMCP/pbpk-mcp) |
+| **Direct-Use Exposure MCP** | Auditable deterministic external-dose scenario construction, jurisdictional comparison, PBPK-ready handoff packaging | Versioned defaults, packaged archetypes, bounded worker/exchange surfaces | Python 3.12+; local install from repo release assets | Available now | [Repo](https://github.com/ToxMCP/direct-use-exposure-mcp) |
+| **Dietary Exposure MCP** | Coming soon | Coming soon | Coming soon | Coming soon | [Repo](https://github.com/ToxMCP/dietary-exposure-mcp) |
+| **Environmental Fate MCP** | Coming soon | Coming soon | Coming soon | Coming soon | [Repo](https://github.com/ToxMCP/environmental-fate-mcp) |
+| **Bioactivity-PoD MCP** | Coming soon | Coming soon | Coming soon | Coming soon | [Repo](https://github.com/ToxMCP/bioactivity-pod-mcp) |
+
+## Getting Started
 
 1) Pick a module below.
    CompTox is still the best first run for many users today, and Direct-Use Exposure MCP is
@@ -29,25 +57,6 @@
 - PBPK MCP: http://localhost:8002
 - AOP MCP: http://localhost:8003
 - ADMETlab MCP: http://localhost:8200
-
-## What is MCP?
-
-MCP (Model Context Protocol) is a standard way for LLM clients/orchestrators to call external tools over a structured interface.
-See the official MCP docs/spec: https://modelcontextprotocol.io/
-
-## Modules
-
-| Module | What it covers | Upstream dependency | Requirements | Status | Repo |
-| --- | --- | --- | --- | --- | --- |
-| **CompTox MCP** | Identity, hazard, exposure, bioactivity, screening prioritization | EPA CompTox APIs + packaged metadata bundles | **API key required** (`CTX_API_KEY`) | Available now | [Repo](https://github.com/ToxMCP/comptox-mcp) |
-| **ADMETlab MCP** | Molecule washing, SVG rendering, ADMET prediction, CSV retrieval | ADMETlab 3.0 API | No key by default; upstream instability/rate limits may cause intermittent failures | Available now | [Repo](https://github.com/ToxMCP/admetlab-mcp) |
-| **AOP MCP** | Mechanistic pathways, scientific review, assay discovery, authoring workflows | AOP-Wiki / AOP-DB / CompTox federation | Internet access recommended; fixture fallback available for offline development | Available now | [Repo](https://github.com/ToxMCP/aop-mcp) |
-| **O-QT MCP** | OECD QSAR workflows, grouping/read-across dossiers, PDF reports | OECD QSAR Toolbox WebAPI | Requires a running QSAR Toolbox WebAPI instance (typically Windows-hosted) | Available now | [Repo](https://github.com/ToxMCP/oqt-mcp) |
-| **PBPK MCP** | PBPK simulation, qualification, verification, dossier export | Open Systems Pharmacology Suite + `rxode2` runtime | Local worker/runtime setup required (see repo deploy scripts) | Available now | [Repo](https://github.com/ToxMCP/pbpk-mcp) |
-| **Direct-Use Exposure MCP** | Auditable deterministic external-dose scenario construction, jurisdictional comparison, PBPK-ready handoff packaging | Versioned defaults, packaged archetypes, bounded worker/exchange surfaces | Python 3.12+; local install from repo release assets | Available now | [Repo](https://github.com/ToxMCP/direct-use-exposure-mcp) |
-| **Dietary Exposure MCP** | Coming soon | Coming soon | Coming soon | Coming soon | [Repo](https://github.com/ToxMCP/dietary-exposure-mcp) |
-| **Environmental Fate MCP** | Coming soon | Coming soon | Coming soon | Coming soon | [Repo](https://github.com/ToxMCP/environmental-fate-mcp) |
-| **Bioactivity-PoD MCP** | Coming soon | Coming soon | Coming soon | Coming soon | [Repo](https://github.com/ToxMCP/bioactivity-pod-mcp) |
 
 ### Which one should I try first?
 
