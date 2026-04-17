@@ -44,13 +44,14 @@ See the official MCP docs/spec: https://modelcontextprotocol.io/
 
 ## Getting Started
 
-1) Pick a module below.
-   CompTox is still the best first run for many users today, and Direct-Use Exposure MCP is
-   now the public entry point for auditable exposure-scenario construction.
-2) Follow that repo’s **Quickstart TL;DR**.
-3) Verify with the **Verification (smoke test)** curl snippet.
+The fastest way to get productive with ToxMCP is:
 
-### Default ports (examples)
+1. Pick an entry point.
+   Start with **CompTox MCP** for the most recognizable public toxicology data workflow, or use **Direct-Use Exposure MCP** when you need an auditable exposure object from the start.
+2. Follow that module repo’s **Quickstart TL;DR**.
+3. Run its **Verification (smoke test)** so you know the local setup is working before adding more modules.
+
+### Common Local Ports
 
 - CompTox MCP: http://localhost:8000
 - O-QT MCP: http://localhost:8001
@@ -60,26 +61,20 @@ See the official MCP docs/spec: https://modelcontextprotocol.io/
 
 ### Which one should I try first?
 
-- Start with **CompTox MCP** if you want the best first-run experience and the most
-  recognizable toxicology dataset integration today.
-- Use **Direct-Use Exposure MCP** when you need a reviewable exposure object with explicit
-  assumptions, provenance, limitations, and fit-for-purpose framing before PBPK or final
-  assessment work.
-- Then add **AOP MCP**, **O-QT MCP**, or **PBPK MCP** depending on whether you want
-  mechanistic context, QSAR Toolbox automation, or PK workflows next.
+- Choose **CompTox MCP** if you want the best first-run experience and the most recognizable toxicology dataset integration today.
+- Choose **Direct-Use Exposure MCP** if you need reviewable exposure scenarios with explicit assumptions, provenance, limitations, and fit-for-purpose framing.
+- Add **AOP MCP**, **O-QT MCP**, or **PBPK MCP** next depending on whether the workflow needs mechanistic context, QSAR Toolbox automation, or toxicokinetic modeling.
 
-Exposure-side stack expansion is still in progress, but the external-exposure layer is now
-public. `Direct-Use Exposure MCP` is the current suite module for deterministic exposure
-screening and governed external-dose handoff generation.
+Exposure-side stack expansion is still in progress, but the external-exposure layer is now public. `Direct-Use Exposure MCP` is the current suite module for deterministic exposure screening and governed external-dose handoff generation.
 
 ## Docs
 
-Start here: [docs/README.md](./docs/README.md)
+Start with [docs/README.md](./docs/README.md) for the suite-level documentation map.
 
 ## Notes
 
 - Each MCP server is versioned and released independently.
-- Some modules depend on proprietary or rate-limited upstream services—check each module README for exact setup.
+- Some modules depend on proprietary or rate-limited upstream services. Check each module README for exact setup details.
 
 ## Acknowledgements / Origins
 
