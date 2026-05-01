@@ -39,7 +39,7 @@ See the official MCP docs/spec: https://modelcontextprotocol.io/
 | **PBPK MCP** | PBPK simulation, qualification, verification, dossier export | Open Systems Pharmacology Suite + `rxode2` runtime | Local worker/runtime setup required (see repo deploy scripts) | Available now | [Repo](https://github.com/ToxMCP/pbpk-mcp) |
 | **Direct-Use Exposure MCP** | Auditable deterministic external-dose scenario construction, jurisdictional comparison, PBPK-ready handoff packaging | Versioned defaults, packaged archetypes, bounded worker/exchange surfaces | Python 3.12+; local install from repo release assets | Available now | [Repo](https://github.com/ToxMCP/direct-use-exposure-mcp) |
 | **Dietary Exposure MCP** | Coming soon | Coming soon | Coming soon | Coming soon | [Repo](https://github.com/ToxMCP/dietary-exposure-mcp) |
-| **Environmental Fate MCP** | Coming soon | Coming soon | Coming soon | Coming soon | [Repo](https://github.com/ToxMCP/environmental-fate-mcp) |
+| **Environmental Fate MCP** | Environmental release-to-concentration screening, scientific review, erosion/sediment transport screening, and downstream regulatory handoff packaging | Versioned defaults, packaged schemas/examples, release artifacts, and optional normalized external payloads | Python 3.12+; local install from repo release assets | Available now (`v0.2.0`) | [Repo](https://github.com/ToxMCP/environmental-fate-mcp) / [Release](https://github.com/ToxMCP/environmental-fate-mcp/releases/tag/v0.2.0) |
 | **Bioactivity-PoD MCP** | Coming soon | Coming soon | Coming soon | Coming soon | [Repo](https://github.com/ToxMCP/bioactivity-pod-mcp) |
 
 ## Getting Started
@@ -63,9 +63,10 @@ The fastest way to get productive with ToxMCP is:
 
 - Choose **CompTox MCP** if you want the best first-run experience and the most recognizable toxicology dataset integration today.
 - Choose **Direct-Use Exposure MCP** if you need reviewable exposure scenarios with explicit assumptions, provenance, limitations, and fit-for-purpose framing.
+- Choose **Environmental Fate MCP** if you need auditable environmental release-to-concentration screening, scalar erosion/sediment transport screening, scientific review packets, or downstream concentration handoff packages.
 - Add **AOP MCP**, **O-QT MCP**, or **PBPK MCP** next depending on whether the workflow needs mechanistic context, QSAR Toolbox automation, or toxicokinetic modeling.
 
-Exposure-side stack expansion is still in progress, but the external-exposure layer is now public. `Direct-Use Exposure MCP` is the current suite module for deterministic exposure screening and governed external-dose handoff generation.
+Exposure-side stack expansion is still in progress, but the external-exposure and environmental-fate layers are now public. `Direct-Use Exposure MCP` covers deterministic external-dose screening and governed external-dose handoff generation; `Environmental Fate MCP` covers bounded environmental release-to-concentration screening and concentration handoff generation.
 
 ## Docs
 

@@ -46,11 +46,17 @@ A quick guide for first-time users.
   assumptions, provenance, limitations, and fit-for-purpose guidance.
   - https://github.com/ToxMCP/direct-use-exposure-mcp
 
+## If you want environmental fate / concentration screening
+
+- **Environmental Fate MCP** — the public suite module for bounded environmental
+  release-to-concentration screening, scalar erosion/sediment transport screening,
+  scientific review packets, and downstream concentration handoff packages.
+  - https://github.com/ToxMCP/environmental-fate-mcp
+  - Current release: https://github.com/ToxMCP/environmental-fate-mcp/releases/tag/v0.2.0
+
 ## Coming soon in the stack
 
 - **Dietary Exposure MCP** — coming soon.
   - https://github.com/ToxMCP/dietary-exposure-mcp
-- **Environmental Fate MCP** — coming soon.
-  - https://github.com/ToxMCP/environmental-fate-mcp
 - **Bioactivity-PoD MCP** — coming soon.
   - https://github.com/ToxMCP/bioactivity-pod-mcp
