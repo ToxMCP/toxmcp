@@ -54,9 +54,19 @@ A quick guide for first-time users.
   - https://github.com/ToxMCP/environmental-fate-mcp
   - Current release: https://github.com/ToxMCP/environmental-fate-mcp/releases/tag/v0.2.0
 
+## If you want processed imaging bioactivity qualification
+
+- **Phenotypic Imaging Bioactivity MCP** — private/local-RC staging module for
+  processed high-content imaging, Cell Painting, CellProfiler, pycytominer, and
+  cell-health feature tables. Use it when you need auditable QC, cytotoxicity
+  context, feature qualification, and Bioactivity-PoD handoff packets without
+  raw-image processing or PoD fitting inside the imaging server.
+  - Repository: private staging (`ToxMCP/phenotypic-imaging-bioactivity-mcp`)
+  - Status: local release candidate; public release visibility still to be confirmed.
+
 ## Coming soon in the stack
 
 - **Dietary Exposure MCP** — coming soon.
-  - https://github.com/ToxMCP/dietary-exposure-mcp
+  - Repository: planned
 - **Bioactivity-PoD MCP** — coming soon.
-  - https://github.com/ToxMCP/bioactivity-pod-mcp
+  - Repository: planned
