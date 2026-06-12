@@ -1,0 +1,4 @@
+# DOI links resolve correctly in browsers but doi.org returns HTTP 403 to
+# automated link checkers (bot protection), causing false-positive failures.
+# The DOI itself is valid and stable.
+https://doi\.org/
