@@ -1,6 +1,6 @@
 [![Release](https://img.shields.io/github/v/release/ToxMCP/toxmcp?sort=semver)](https://github.com/ToxMCP/toxmcp/releases)
 [![GitHub stars](https://img.shields.io/github/stars/ToxMCP/toxmcp?style=social)](https://github.com/ToxMCP/toxmcp/stargazers)
-[![DOI](https://img.shields.io/badge/DOI-10.64898%2F2026.02.06.703989-blue)](https://doi.org/10.64898/2026.02.06.703989)
+![DOI](https://img.shields.io/badge/DOI-10.64898%2F2026.02.06.703989-blue)
 [![License](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](./LICENSE)
 [![MCP](https://img.shields.io/badge/MCP-JSON--RPC-informational)](https://modelcontextprotocol.io/)
 
@@ -10,7 +10,7 @@
 
 If you want the single best place to follow the public suite, module launches, and onboarding path, **star this repo**.
 
-- Preprint (bioRxiv): https://doi.org/10.64898/2026.02.06.703989
+- Preprint DOI: `10.64898/2026.02.06.703989`
 - Citation metadata: [`CITATION.cff`](./CITATION.cff)
 
 ## Why Star This Repo?
@@ -38,9 +38,15 @@ See the official MCP docs/spec: https://modelcontextprotocol.io/
 | **O-QT MCP** | OECD QSAR workflows, grouping/read-across dossiers, PDF reports | OECD QSAR Toolbox WebAPI | Requires a running QSAR Toolbox WebAPI instance (typically Windows-hosted) | Available now | [Repo](https://github.com/ToxMCP/oqt-mcp) |
 | **PBPK MCP** | PBPK simulation, qualification, verification, dossier export | Open Systems Pharmacology Suite + `rxode2` runtime | Local worker/runtime setup required (see repo deploy scripts) | Available now | [Repo](https://github.com/ToxMCP/pbpk-mcp) |
 | **Direct-Use Exposure MCP** | Auditable deterministic external-dose scenario construction, jurisdictional comparison, PBPK-ready handoff packaging | Versioned defaults, packaged archetypes, bounded worker/exchange surfaces | Python 3.12+; local install from repo release assets | Available now | [Repo](https://github.com/ToxMCP/direct-use-exposure-mcp) |
-| **Dietary Exposure MCP** | Coming soon | Coming soon | Coming soon | Coming soon | [Repo](https://github.com/ToxMCP/dietary-exposure-mcp) |
+| **Dietary Exposure MCP** | Coming soon | Coming soon | Coming soon | Coming soon | Repo planned |
 | **Environmental Fate MCP** | Environmental release-to-concentration screening, scientific review, erosion/sediment transport screening, and downstream regulatory handoff packaging | Versioned defaults, packaged schemas/examples, release artifacts, and optional normalized external payloads | Python 3.12+; local install from repo release assets | Available now (`v0.2.0`) | [Repo](https://github.com/ToxMCP/environmental-fate-mcp) / [Release](https://github.com/ToxMCP/environmental-fate-mcp/releases/tag/v0.2.0) |
-| **Bioactivity-PoD MCP** | Coming soon | Coming soon | Coming soon | Coming soon | [Repo](https://github.com/ToxMCP/bioactivity-pod-mcp) |
+| **Bioactivity-PoD MCP** | Coming soon | Coming soon | Coming soon | Coming soon | Repo planned |
+
+## Private / Local RC Staging
+
+| Module | What it covers | Upstream dependency | Requirements | Status | Repo |
+| --- | --- | --- | --- | --- | --- |
+| **Phenotypic Imaging Bioactivity MCP** | Processed high-content imaging feature QC, cytotoxicity/confound review, feature qualification, and Bioactivity-PoD handoff packet generation | Processed CellProfiler, pycytominer, Cell Painting, generic morphology, and cell-health tables | Node.js >=20; stdio MCP server; no raw-image processing | Local release candidate; private staging until public release visibility is confirmed | Private staging |
 
 ## Getting Started
 
@@ -64,9 +70,12 @@ The fastest way to get productive with ToxMCP is:
 - Choose **CompTox MCP** if you want the best first-run experience and the most recognizable toxicology dataset integration today.
 - Choose **Direct-Use Exposure MCP** if you need reviewable exposure scenarios with explicit assumptions, provenance, limitations, and fit-for-purpose framing.
 - Choose **Environmental Fate MCP** if you need auditable environmental release-to-concentration screening, scalar erosion/sediment transport screening, scientific review packets, or downstream concentration handoff packages.
+- Choose **Phenotypic Imaging Bioactivity MCP** if you are staging processed high-content imaging or Cell Painting feature tables for auditable QC, cytotoxicity context, feature qualification, and downstream Bioactivity-PoD handoff.
 - Add **AOP MCP**, **O-QT MCP**, or **PBPK MCP** next depending on whether the workflow needs mechanistic context, QSAR Toolbox automation, or toxicokinetic modeling.
 
 Exposure-side stack expansion is still in progress, but the external-exposure and environmental-fate layers are now public. `Direct-Use Exposure MCP` covers deterministic external-dose screening and governed external-dose handoff generation; `Environmental Fate MCP` covers bounded environmental release-to-concentration screening and concentration handoff generation.
+
+Bioactivity-side stack expansion is also in progress. `Phenotypic Imaging Bioactivity MCP` is the processed-imaging evidence qualification layer currently in private local-RC staging; it prepares conservative, schema-backed imaging response packets for the forthcoming Bioactivity-PoD module without fitting PoDs or processing raw microscopy images.
 
 ## Docs
 
@@ -91,7 +100,7 @@ Apache-2.0
 
 ## ✅ Citation
 
-Djidrovski, I. **ToxMCP: Guardrailed, Auditable Agentic Workflows for Computational Toxicology via the Model Context Protocol.** bioRxiv (2026). https://doi.org/10.64898/2026.02.06.703989
+Djidrovski, I. **ToxMCP: Guardrailed, Auditable Agentic Workflows for Computational Toxicology via the Model Context Protocol.** bioRxiv (2026). DOI: `10.64898/2026.02.06.703989`
 
 ```bibtex
 @article{djidrovski2026toxmcp,
@@ -99,8 +108,7 @@ Djidrovski, I. **ToxMCP: Guardrailed, Auditable Agentic Workflows for Computatio
   author  = {Djidrovski, Ivo},
   journal = {bioRxiv},
   year    = {2026},
-  doi     = {10.64898/2026.02.06.703989},
-  url     = {https://doi.org/10.64898/2026.02.06.703989}
+  doi     = {10.64898/2026.02.06.703989}
 }
 ```
 
