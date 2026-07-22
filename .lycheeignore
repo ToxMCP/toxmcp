@@ -2,6 +2,9 @@
 # automated link checkers (bot protection), causing false-positive failures.
 # The DOI itself is valid and stable.
 https://doi\.org/
+# GitHub intermittently returns 404 to authenticated link-checker requests for
+# the stargazers page even though the public repository and badge are valid.
+https://github\.com/ToxMCP/toxmcp/stargazers
 # Sibling ToxMCP repos that are still private return 404 to the link
 # checker (the repo-scoped GITHUB_TOKEN cannot read other private repos).
 # Remove these as each repo is made public.
