@@ -5,5 +5,4 @@ https://doi\.org/
 # Sibling ToxMCP repos that are still private return 404 to the link
 # checker (the repo-scoped GITHUB_TOKEN cannot read other private repos).
 # Remove these as each repo is made public.
-https://github\.com/ToxMCP/dietary-exposure-mcp
 https://github\.com/ToxMCP/bioactivity-pod-mcp

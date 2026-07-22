@@ -52,11 +52,18 @@ A quick guide for first-time users.
   release-to-concentration screening, scalar erosion/sediment transport screening,
   scientific review packets, and downstream concentration handoff packages.
   - https://github.com/ToxMCP/environmental-fate-mcp
-  - Current release: https://github.com/ToxMCP/environmental-fate-mcp/releases/tag/v0.2.0
+  - Current release: https://github.com/ToxMCP/environmental-fate-mcp/releases/tag/v0.5.0
+
+## If you want food-mediated dietary exposure screening
+
+- **Dietary Exposure MCP** - the public screening-only module for food-mediated oral
+  exposure calculations, governed residue and consumption review, and PBPK-ready oral
+  dose handoffs. It is an early `0.x` release and does not make final safety, legal, or
+  regulatory decisions.
+  - https://github.com/ToxMCP/dietary-exposure-mcp
+  - Current release: https://github.com/ToxMCP/dietary-exposure-mcp/releases/tag/v0.1.0
 
 ## Coming soon in the stack
 
-- **Dietary Exposure MCP** — coming soon.
-  - https://github.com/ToxMCP/dietary-exposure-mcp
 - **Bioactivity-PoD MCP** — coming soon.
   - https://github.com/ToxMCP/bioactivity-pod-mcp
