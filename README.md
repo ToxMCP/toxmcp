@@ -40,6 +40,7 @@ See the official MCP docs/spec: https://modelcontextprotocol.io/
 | **Direct-Use Exposure MCP** | Auditable deterministic external-dose scenario construction, jurisdictional comparison, PBPK-ready handoff packaging | Versioned defaults, packaged archetypes, bounded worker/exchange surfaces | Python 3.12+; local install from repo release assets | Available now | [Repo](https://github.com/ToxMCP/direct-use-exposure-mcp) |
 | **Dietary Exposure MCP** | Food-mediated oral exposure screening, governed residue and consumption review, and PBPK-ready oral dose handoffs | Versioned defaults plus governed residue, consumption, reference-value, legal, and source registries | Python 3.12+; install the verified wheel from GitHub release assets; local stdio operation | Available now (`v0.1.0`; **screening only**) | [Repo](https://github.com/ToxMCP/dietary-exposure-mcp) / [Release](https://github.com/ToxMCP/dietary-exposure-mcp/releases/tag/v0.1.0) |
 | **Environmental Fate MCP** | Environmental release-to-concentration screening, scientific review, erosion/sediment transport screening, and downstream regulatory handoff packaging | Versioned defaults, packaged schemas/examples, release artifacts, and optional normalized external payloads | Python 3.12+; local install from repo release assets | Available now (`v0.5.0`) | [Repo](https://github.com/ToxMCP/environmental-fate-mcp) / [Release](https://github.com/ToxMCP/environmental-fate-mcp/releases/tag/v0.5.0) |
+| **Epigenomics MCP** | Processed epigenomic feature qualification, scientific review, and Bioactivity-PoD handoff packaging | Processed feature, design, and provenance inputs; packaged GEO fixture; optional external integration clients | Node.js 20+; local stdio or loopback HTTP; no API key for core workflows | Available now (`v0.2.0`; **qualification and handoff only**) | [Repo](https://github.com/ToxMCP/epigenomics-mcp) / [Release](https://github.com/ToxMCP/epigenomics-mcp/releases/tag/v0.2.0) |
 | **Bioactivity-PoD MCP** | Coming soon | Coming soon | Coming soon | Coming soon | [Repo](https://github.com/ToxMCP/bioactivity-pod-mcp) |
 
 ## Getting Started
@@ -47,7 +48,7 @@ See the official MCP docs/spec: https://modelcontextprotocol.io/
 The fastest way to get productive with ToxMCP is:
 
 1. Pick an entry point.
-   Start with **CompTox MCP** for the most recognizable public toxicology data workflow, **Direct-Use Exposure MCP** for product-use exposure scenarios, or **Dietary Exposure MCP** for food-mediated oral screening.
+   Start with **CompTox MCP** for the most recognizable public toxicology data workflow, **Direct-Use Exposure MCP** for product-use exposure scenarios, **Dietary Exposure MCP** for food-mediated oral screening, or **Epigenomics MCP** for processed epigenomic evidence qualification.
 2. Follow that module repo’s **Quickstart TL;DR**.
 3. Run its **Verification (smoke test)** so you know the local setup is working before adding more modules.
 
@@ -65,9 +66,12 @@ The fastest way to get productive with ToxMCP is:
 - Choose **Direct-Use Exposure MCP** if you need reviewable exposure scenarios with explicit assumptions, provenance, limitations, and fit-for-purpose framing.
 - Choose **Dietary Exposure MCP** if you need screening-only food-mediated oral exposure calculations, governed residue and consumption review, or a PBPK-ready oral dose handoff.
 - Choose **Environmental Fate MCP** if you need auditable environmental release-to-concentration screening, scalar erosion/sediment transport screening, scientific review packets, or downstream concentration handoff packages.
+- Choose **Epigenomics MCP** if you need bounded qualification of processed methylation or region-level features, explicit scientific limitations, or a governed Bioactivity-PoD handoff.
 - Add **AOP MCP**, **O-QT MCP**, or **PBPK MCP** next depending on whether the workflow needs mechanistic context, QSAR Toolbox automation, or toxicokinetic modeling.
 
 The direct-use, dietary, and environmental-fate exposure layers are now public. `Direct-Use Exposure MCP` covers deterministic product-use external-dose screening; `Dietary Exposure MCP v0.1.0` covers food-mediated oral screening and governed evidence handoffs; and `Environmental Fate MCP` covers bounded environmental release-to-concentration screening. Each remains a bounded screening service rather than a final safety or regulatory decision engine.
+
+`Epigenomics MCP v0.2.0` is also public as a qualification-and-handoff layer for already processed epigenomic evidence. It does not perform raw sequencing, methylation calling, causal inference, clinical interpretation, or final regulatory decision-making.
 
 ## Docs
 
