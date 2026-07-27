@@ -71,7 +71,7 @@ A quick guide for first-time users.
   for Bioactivity-PoD workflows. It does not process raw sequencing data or make
   causal, clinical, safety, or regulatory conclusions.
   - https://github.com/ToxMCP/epigenomics-mcp
-  - Current release: https://github.com/ToxMCP/epigenomics-mcp/releases/tag/v0.2.0
+  - Current release: https://github.com/ToxMCP/epigenomics-mcp/releases/tag/v0.2.1
 
 ## Coming soon in the stack
 
