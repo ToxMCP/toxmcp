@@ -63,6 +63,16 @@ A quick guide for first-time users.
   - https://github.com/ToxMCP/dietary-exposure-mcp
   - Current release: https://github.com/ToxMCP/dietary-exposure-mcp/releases/tag/v0.1.0
 
+## If you want processed epigenomic evidence qualification
+
+- **Epigenomics MCP** — the public qualification-and-handoff module for processed
+  methylation and region-level feature tables. It profiles data quality, applies
+  explicit context and scientific-boundary rules, and can package qualified evidence
+  for Bioactivity-PoD workflows. It does not process raw sequencing data or make
+  causal, clinical, safety, or regulatory conclusions.
+  - https://github.com/ToxMCP/epigenomics-mcp
+  - Current release: https://github.com/ToxMCP/epigenomics-mcp/releases/tag/v0.2.0
+
 ## Coming soon in the stack
 
 - **Bioactivity-PoD MCP** — coming soon.
