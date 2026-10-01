@@ -21,7 +21,7 @@ If you want the single best place to follow the public suite, module launches, a
 
 ## Architecture
 
-![ToxMCP architecture](./assets/toxmcp-architecture.jpg)
+![ToxMCP architecture](./assets/toxmcp-architecture-2026.jpg)
 
 ## What Is MCP?
 
