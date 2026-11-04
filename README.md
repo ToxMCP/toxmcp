@@ -52,6 +52,12 @@ The fastest way to get productive with ToxMCP is:
 2. Follow that module repo’s **Quickstart TL;DR**.
 3. Run its **Verification (smoke test)** so you know the local setup is working before adding more modules.
 
+### Desktop and coding agents (stdio)
+
+**CompTox MCP** (`v0.3.0`) and **AOP MCP** (`v0.10.1`) ship a local stdio entry point, which is what desktop and coding agents such as Claude Desktop, Claude Code, Codex CLI and Gemini CLI use. Install the pinned release wheel with `uvx` and let the client start the server; there is nothing to clone or keep running. See the **Local stdio install** section in each repo: [CompTox](https://github.com/ToxMCP/comptox-mcp#local-stdio-install-desktop-and-coding-agents) · [AOP](https://github.com/ToxMCP/aop-mcp#local-stdio-install-desktop-and-coding-agents).
+
+The ports below apply only when you run a module as an HTTP service.
+
 ### Common Local Ports
 
 - CompTox MCP: http://localhost:8000
